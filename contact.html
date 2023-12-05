@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+   }
+   
+   .container {
+    width: 100%;
+    padding: 16px;
+    background-color: white;
+    margin-top: 100px;
+    box-shadow: 0 4px 8px 0 rgba(180, 101, 101, 0.2);
+   }
+   
+   .container h2 {
+    text-align: center;
+    color: #f1f1f1;
+    background-color: #4CAF50;
+    padding: 16px;
+    margin-bottom: 20px;
+   }
+   
+   input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+   }
+   
+   label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+   }
+   
+   input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+   }
+   
+   input[type=submit]:hover {
+    background-color: #45a049;
+   }
+   
+   .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+   }
+    </style>
+
+<div class="container">
+ <h2>Get In Touch</h2>
+ <form action="/submit_contact_info" method="post">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email address..">
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
+
+    <input type="submit" value="Submit">
+ </form>
+</div>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: Gng@gamil.com</p>
+    <p>Phone: 8787309401</p>
+</section>
+
+</body>
+</html>
